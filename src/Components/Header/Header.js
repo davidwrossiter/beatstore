@@ -1,20 +1,22 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import './Header.css';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
     <header>
       <nav>
         <div className="header-title">
-            <h1>THE BEST</h1>
+          <ul className='the-best'><li><Link to="/">THE BEST</Link></li></ul>
+      
         </div>
         <div className="header-links">
             <ul>
-            <li><a href="">License</a></li>
-            <li><a href="">Buy</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Contact</a></li>
+              <li><Link to="/license">License</Link></li>
+              <li><Link to="/buy">Buy</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
         </div>
       </nav>

@@ -8,7 +8,7 @@ header {
     color: #fff;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 80px;
     width: 100%;
   }
   
@@ -24,6 +24,7 @@ header {
   }
   
   nav li a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -38,11 +39,18 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    border: solid red 10px;
+    
   }
 
-  .header-title h1 {
+  .the-best {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-style: italic;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  Link {
+    text-decoration: none;
   }
