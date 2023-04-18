@@ -9,12 +9,12 @@ const Track = ({ track }) => {
     // let drakeArt = '1sJHsWnN1bRykiz4tu7FzmoLy5Ym7Nxnx'
     const audioRef = React.createRef();
     let [isPlaying, setIsPlaying] = useState(false);
+    
 
     const togglePlay = () => {
         setIsPlaying(!isPlaying);
         isPlaying ? audioRef.current.pause() : audioRef.current.play();
     }
-
 
 
     return (
