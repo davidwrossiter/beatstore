@@ -1,0 +1,37 @@
+.trending {
+    display: flex;
+    flex-direction: row;
+
+    /* border: solid red 10px; */
+    flex-basis: 100%;
+    flex-wrap: wrap;
+
+    /* flex-wrap:initial; */
+    /* height: 0; */
+    justify-content: space-between;
+    margin-top: 50px;
+    /* flex-grow: 1; */
+    width: 100px;
+    gap: 10px;
+
+    
+
+}
+
+.trending-container {
+    display: flex;
+    justify-content: center;
+}
+
+#discography {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.discography {
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: "Plus Jakarta Sans"
+}
+
+.track {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.artistName {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.artistName p {
+    margin-right: 5px;
+    
+}
+
+.artistName img {
+    margin-top: 4px;
+}
+
+#track-info {
+    margin-top: 10px;
+    color:rgb(170, 170, 170);
+    font-size: 12px;
+}
+
+#track-info-title {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#cover-image {
+    width: 240px;
+}
+
+.track button {
+    border: solid rgb(255, 255, 255) 1px;
+    margin-top: 10px;
+    width: 240px;
+}
