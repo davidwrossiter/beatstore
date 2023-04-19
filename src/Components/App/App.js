@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import Hero from '../Hero/Hero'
-// import Track from '../Track/Track';
+import icons from '../../utils/resources';
 import tracks from '../../utils/tracks';
 import Trending from '../Trending/Trending';
 import Carousel from "../Carousel/Carousel";
@@ -15,7 +15,7 @@ const App = () => {
 
             <Header></Header>
             <Routes>
-                <Route path="/" element={<HomePage tracks={tracks}/>}></Route>
+                <Route path="/" element={<HomePage tracks={tracks} icons={icons}/>}></Route>
 
                 {/* <Route path="/license" element={<Player src="https://docs.google.com/uc?export=download&id=11dpRdwSz4vcgfnjeVXGdH5YH9EK_n_Y5"/>}></Route>*/}
                 <Route path="/buy" element={<Trending tracks={tracks}/>}></Route>

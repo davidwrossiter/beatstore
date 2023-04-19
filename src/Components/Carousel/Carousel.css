@@ -8,6 +8,8 @@
     /* height:500px; */
     /* min-width:740px; */
     width: 1250px;
+
+
 }
 
 .inner-carousel {
@@ -29,11 +31,82 @@
 #carousel-container {
     display: flex;
     justify-content: center;
-    padding-left: 20%;
     padding-right: 20%;
+    padding-left: 20%;
 }
 
-@media only screen and (max-width: 1200px) {
+
+
+
+
+
+#carousel-trending {
+    color: white;
+    font-weight: 800;
+    font-size: 48px;
+
+}
+
+
+
+#mobile-display,
+#desktop-display {
+    background: none;
+    color: white;
+    width: 145px;
+    border: solid white 1px;
+    border-radius: 10px;
+    height: 40px;
+    
+}
+
+
+.carousel-buttons button {
+    margin-left: 5px
+}
+
+#mobile-display:hover,
+#desktop-display:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.carouselNav {
+    display: flex;
+    align-items: center;
+    /* border: solid red 10px; */
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .carousel {
+        /* min-width: 500px; */
+        width: 500px;
+    }
+
+    #desktop-display {
+        display: none;
+    }
+
+    #mobile-display {
+        border: none;
+        width: 50px;
+    }
+
+
+    #carousel-trending {
+
+        color: white;
+        font-weight: 400;
+        font-size: 32px;
+
+}
+
+
+}
+
+/* @media only screen and (max-width: 1200px) and (min-width: 768px) {
 
     .carousel {
         width: 500px;
@@ -43,61 +116,18 @@
     #desktop-display {
         display: none
     }
-}
+} */
 
-@media only screen and (max-width: 768px) {
-
-    .carousel {
-        min-width: 250px;
-        width: 250px;
-    }
-
+@media only screen and (min-width: 786px) {
     #desktop-display {
         display: none;
     }
-}
 
-#carousel-trending {
-    color: white;
-    font-weight: 800;
-    font-size: 48px;
-
-}
-
-@media only screen and (min-width: 1200px) {
     #mobile-display {
-        display: none;
+        border: none;
+        width: 50px;
     }
-}
-
-#mobile-display,
-#desktop-display {
-    background: white;
-    color: black;
-    width: 110px;
-
-    border-radius: 10px;
-    border: none;
-    height: 40px;
-    
-}
-
-#mobile-display button,
-#desktop-display button {
-    padding-left: 10px;
-    border: solid red 1px;
-
-} 
 
 
-.carousel-buttons button {
-    margin-left: 5px
-}
 
-.carouselNav {
-    display: flex;
-    align-items: center;
-    /* border: solid red 10px; */
-    justify-content: space-between;
-    margin-bottom: 40px;
 }

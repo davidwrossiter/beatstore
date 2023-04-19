@@ -4,7 +4,7 @@ import Track from '../Track/Track';
 import './Carousel.css';
 import * as ReactDOM from 'react-dom'
 
-const Carousel = ({ tracks }) => {
+const Carousel = ({ tracks, headerTitle, icons }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     
     // for(let i = 0; i < trackData.length; i++) {
@@ -50,18 +50,18 @@ const Carousel = ({ tracks }) => {
     }
     
 
-    
+    // 1EsoWtYz6wg53EsA_znRHsLR9Oo82LmZ7
 
     return (
         <div id="carousel-container">
             <div className="carousel">
                 <div className="carouselNav">
-                    <h1 id="carousel-trending">Trending</h1>
+                    <h1 id="carousel-trending">{headerTitle}</h1>
                     <div className="carousel-buttons">
                         <button id="desktop-display" onClick={() =>{updateIndex(activeIndex - 1 )}}>Back</button>
                         <button id="desktop-display" onClick={() =>{updateIndex(activeIndex + 1 )}}>Forward</button>
-                        <button id="mobile-display" onClick={() =>{updateIndexMobile(activeIndex - 1 )}}>Backward</button>
-                        <button id="mobile-display" onClick={() =>{updateIndexMobile(activeIndex + 1 )}}>Forward</button>
+                        <button id="mobile-display" onClick={() =>{updateIndexMobile(activeIndex - 1 )}}><img src={`https://drive.google.com/uc?export=view&id=${'1P82kfDJJ4vgFeJcgcpq40CLOg0DcmHXM'}`}></img></button>
+                        <button id="mobile-display" onClick={() =>{updateIndexMobile(activeIndex + 1 )}}><img src={`https://drive.google.com/uc?export=view&id=${'1EsoWtYz6wg53EsA_znRHsLR9Oo82LmZ7'}`}></img></button>
                     </div>
                 </div>
                 <div className="inner-carousel"

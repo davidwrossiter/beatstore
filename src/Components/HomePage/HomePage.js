@@ -7,15 +7,15 @@ import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import Carousel from '../Carousel/Carousel';
 import './HomePage.css';
 
-const HomePage = ({ tracks }) => {
+const HomePage = ({ tracks, icons }) => {
     return (
         <>
         
         {/* <DropDownMenu></DropDownMenu> */}
         <Hero />
-        <div className="homePageCarousel"><Carousel tracks={tracks}/></div>
+        <div className="homePageCarousel"><Carousel tracks={tracks} headerTitle={'Trending'} icons={icons}/></div>
         <br></br>
-        <div><Carousel tracks={tracks}/></div>
+        <div><Carousel tracks={tracks} headerTitle={'Popular'}/></div>
         <div className="footer"></div>
         {/* <Player src={tracks[0].url} /> */}
     </>
