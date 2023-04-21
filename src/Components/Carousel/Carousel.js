@@ -19,7 +19,7 @@ const Carousel = ({ tracks, headerTitle }) => {
     const updateIndexMobile = (newIndex) => {
         if (newIndex < 0) {
             newIndex = 0;
-        } else if (newIndex >= tracks.length){
+        } else if (newIndex >= tracks.length-4){
             newIndex = tracks.length - tracks.length;
         }
         
