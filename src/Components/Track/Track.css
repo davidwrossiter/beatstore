@@ -7,6 +7,7 @@
 .track {
     color: white;
     margin-bottom: 50px;
+    margin-right: 10px;
 }
 
 .artistName {
@@ -40,7 +41,18 @@
 }
 
 .track button {
+    display: flex;
     border: solid rgb(255, 255, 255) 1px;
     margin-top: 10px;
     width: 240px;
+    background: none;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.track button:hover {
+    background-color: rgb(49, 49, 49);
 }
